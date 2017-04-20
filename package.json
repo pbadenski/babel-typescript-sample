@@ -1,0 +1,12 @@
+{
+  "scripts": {
+    "build": "babel src -d lib"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-plugin-transform-class-properties": "latest",
+    "babel-plugin-syntax-object-rest-spread": "latest",
+    "babel-plugin-transform-object-rest-spread": "latest",
+    "babel-plugin-transform-typescript": "latest"
+  }
+}

@@ -1,13 +1,15 @@
 {
   "scripts": {
-    "build": "babel src -d lib --extensions .ts",
+    "build": "npm-run-all transpile typecheck",
+    "transpile": "babel src -d lib --extensions .ts",
     "typecheck": "tsc"
   },
   "devDependencies": {
-    "babel-cli": "^6.24.1",
+    "babel-cli": "latest",
     "babel-plugin-transform-class-properties": "latest",
     "babel-plugin-transform-object-rest-spread": "latest",
     "babel-plugin-transform-typescript": "latest",
+    "npm-run-all": "^4.0.2",
     "typescript": "next"
   }
 }

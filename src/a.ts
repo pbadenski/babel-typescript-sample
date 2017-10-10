@@ -1,7 +1,13 @@
-export class C {
-    x: number = 0;
+export {};
 
-    m(o) {
-        return { ... o };
-    }
-}
+const o = <any> { a: 2 };
+
+const f = () => (<any> {
+  property: "value"
+});
+
+const f2 = () => {
+  return <any> {
+    property: "value"
+  };
+};

@@ -1,12 +1,14 @@
 {
   "scripts": {
-    "build": "npm-run-all transpile typecheck",
-    "transpile": "babel src -d lib",
+    "build": "npm-run-all clean transpile typecheck",
+    "clean": "rm -r lib",
+    "transpile": "babel src --extensions '.ts' --out-dir lib",
+    "watch-transpile": "babel src --out-dir lib --watch",
     "typecheck": "tsc"
   },
   "devDependencies": {
-    "babel-cli": "latest",
-    "babel-preset-typescript": "7.0.0-alpha.7",
+    "babel-cli": "next",
+    "babel-preset-typescript": "next",
     "npm-run-all": "^4.0.2",
     "typescript": "next"
   }

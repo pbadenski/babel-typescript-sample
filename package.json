@@ -8,6 +8,7 @@
   },
   "devDependencies": {
     "babel-cli": "next",
+    "babel-preset-react": "next",
     "babel-preset-typescript": "next",
     "npm-run-all": "^4.0.2",
     "typescript": "next"
